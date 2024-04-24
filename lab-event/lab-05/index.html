@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <input type="text" name="nickname" />
+   <input type="text" name="job" />
+</body>
+<script>
+   const nicknameInput = document.querySelector('input[name="nickname"]')
+   const jobInput = document.querySelector('input[name="job"]')
+   nicknameInput.addEventListener("input", function(event) {
+      console.log(event.target.value);
+   });
+   nicknameInput.addEventListener("click", function(event) {
+      console.log(event.target.name);
+   })
+   jobInput.addEventListener("input", function(event) {
+      console.log(event.target.value)
+   })
+   jobInput.addEventListener("click", function(event) {
+      console.log(event.target.name)
+   })
+</script>
+
+</html>

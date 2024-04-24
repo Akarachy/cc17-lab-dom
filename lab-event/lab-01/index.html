@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button>-</button>
+</body>
+<script>
+   let button = document.querySelector('button');
+   button.addEventListener('click', () => alert('1'));  // (1)
+   button.removeEventListener('click', () => alert('1')); // (2) This is not working.
+   button.onclick = () => alert(2); // (3)
+</script>
+</html>
